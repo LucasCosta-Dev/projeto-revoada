@@ -222,6 +222,7 @@ html {
   height: auto; }
 
 .card-menu {
+  cursor: pointer;
   background-color: white;
   width: 180px;
   height: 280px;
