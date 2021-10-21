@@ -1,0 +1,19 @@
+.button-menu {
+    cursor: pointer;
+    background-color: #ab8767;
+    border: none;
+    border-radius: 10px;
+
+    width: 150px;
+    height: 50px;
+    font-family: "nunito", sans-serif;
+    color: white;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 0px 10px;
+    margin: 0px 30px;
+
+    &:hover{
+        background-color: #573b22;
+    }
+}
