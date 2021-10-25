@@ -34,7 +34,7 @@ html {
 .container-menu {
   width: 90%;
   margin: 0px auto;
-  padding-top: 80px;
+  padding-top: 25px;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -45,6 +45,7 @@ html {
 .content {
   position: absolute;
   display: none;
+  max-width: 1440px;
   left: 0px;
   right: 0px;
   margin: 20px auto; }
