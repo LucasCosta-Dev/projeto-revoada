@@ -23,3 +23,30 @@
     min-height: 60px;
     background-color: black;
 }
+.container-menu{
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+.content{
+    position: absolute;
+    display: none;
+    left: 0px;
+    right: 0px;
+    margin: 20px auto;
+}
+.rd-tabs:checked ~ .content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
