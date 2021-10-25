@@ -17,3 +17,13 @@
         background-color: #573b22;
     }
 }
+
+
+.btn-floating{
+    width: 13%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
