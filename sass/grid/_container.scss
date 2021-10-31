@@ -1,40 +1,39 @@
-.container-nav{
+.container-nav {
     min-height: 60px;
     width: 100%;
     background-color: black;
-    
+
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
     z-index: 1030;
 }
-.container{
+.container {
     max-width: 1140px;
     min-height: 350px;
     margin: 0px auto;
 }
-.container-space{
-    background-image: url('../imagens/space.png');
+.container-space {
+    background-image: url("../imagens/space.png");
     min-height: 30px;
 }
 
-.container-footer{
+.container-footer {
     min-height: 60px;
     background-color: black;
 }
-.container-menu{
+.container-menu {
     width: 90%;
+    min-height: 750px;
     margin: 0px auto;
-    padding-top: 25px;
+    padding-top: 50px;
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
     flex-direction: row;
 }
-.content{
+.content {
     position: absolute;
     display: none;
     max-width: 1440px;
@@ -42,7 +41,7 @@
     right: 0px;
     margin: 20px auto;
 }
-.rd-tabs:checked ~ .content{
+.rd-tabs:checked ~ .content {
     display: flex;
     align-content: center;
     justify-content: center;
