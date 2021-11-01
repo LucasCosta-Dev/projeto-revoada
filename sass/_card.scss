@@ -14,6 +14,7 @@
     left: 5%;
     right: 5%;
     top: -25px;
+    
 }
 
 .card-menu{
@@ -25,15 +26,15 @@
     margin: 30px 15px;
     opacity: 95%;
     box-shadow: 7px 7px 13px 0px rgb(50, 50, 50);
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     
     &:hover{
         width: 240px;
         height: 260px;
         .text-menu{
             opacity: 1;
-            transition: 0.3s;
-            transform: translateY(0px);
+            transition: 0.5s;
+            transform: translateY(-30px);
         }
     }
 }
@@ -41,10 +42,23 @@
 
 .lanches{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
 }
 .porcoes{
     display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
 }
 .sobremesas{
     display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

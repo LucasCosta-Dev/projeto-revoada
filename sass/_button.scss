@@ -5,18 +5,17 @@
     text-align: center;
     padding: 10px 15px;
     margin: auto 25px;
-    background-color: #ab8767;
-    display: block;    
+    background-color: #a7703c;
+    border: none;   
     border-radius: 10px;
     cursor: pointer;
-}
-.rd-tabs:checked ~ label{
-    background-color: #573b22;
-}
-.rd-tabs{
-    display: none;
-}
+    
 
+    &:hover{
+        background-color: #783e00;
+        box-shadow: 0px 0px 13px 5px #af6c4b;
+    }
+}
 .btn-floating{
     width: 13%;
     position: fixed;
