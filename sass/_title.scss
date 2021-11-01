@@ -1,74 +1,101 @@
-.nav-text{
-    font-family: 'Nunito', sans-serif;
-    color: white;
+.nav-text {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+
+  &:hover {
+    border: 3px solid #cda67d;
+    border-radius: 10px;
+  }
+}
+.title {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 6rem;
+  text-shadow: 2px 2px 6px rgb(24, 23, 23);
+  text-align: center;
+}
+.sub-title {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgb(24, 23, 23);
+}
+.title-section {
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 2.5rem;
+  text-align: justify;
+}
+.text {
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align: justify;
+}
+.title-contact {
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.text-contact {
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+.title-menu {
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+  top: -25px;
+}
+.text-menu {
+  font-family: "Nunito", sans-serif;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  padding: 15px 5px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  transform: translateY(-150px);
+}
+
+@media (max-width: 700px) {
+  .nav-text {
+    font-size: 1.2rem;
+
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .sub-title {
     font-size: 1.5rem;
-    font-weight: lighter;
-    text-align: center;
-
-    &:hover{
-        border: 3px solid #CDA67D;
-        border-radius: 10px;
-        }
-}
-.title{
-    font-family: 'Nunito' , sans-serif;
-    color: white;
-    font-size: 6rem;
-    text-shadow: 2px 2px 6px rgb(24, 23, 23);
-    text-align: center;
-}
-.sub-title{
-    font-family: 'Nunito', sans-serif;
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    text-shadow: 2px 2px 6px rgb(24, 23, 23);   
-}
-.title-section{
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 2.5rem;
-    text-align: justify;
-
-}
-.text{
-    font-family: 'Nunito', sans-serif;
-    color: black;
+  }
+  .title-section {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .title-menu {
+    font-size: 14px;
+    top: -15px;
+  }
+  .text-menu {
+    font-size: 14px;
+  }
+  .title-contact {
     font-size: 1rem;
-    text-align: justify;
 
+  }
+  .text-contact {
+    font-size: 0.9rem;
+  }
 }
-.title-contact{
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 1.5rem;
-    text-align: center;
-}
-.text-contact{
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 1rem;
-    text-align: center;
-}
-.title-menu{
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 1.5rem;
-    text-align: center;
-    position: relative;
-    top: -25px;
-
-}
-.text-menu{
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    font-size: 1rem;
-    text-align: center;
-    padding: 15px 5px;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-    transform: translateY(-150px);
-    
-
-}
-

@@ -1,26 +1,38 @@
-.btn-menu{
-    font-family: 'Nunito', sans-serif;
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 10px 15px;
-    margin: auto 25px;
-    background-color: #a7703c;
-    border: none;   
-    border-radius: 10px;
-    cursor: pointer;
-    
+.btn-menu {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px 15px;
+  margin: auto 25px;
+  background-color: #a7703c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 
-    &:hover{
-        background-color: #783e00;
-        box-shadow: 0px 0px 13px 5px #af6c4b;
-    }
+  &:hover {
+    background-color: #783e00;
+    box-shadow: 0px 0px 13px 5px #af6c4b;
+  }
 }
-.btn-floating{
-    width: 13%;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 1000;
-    cursor: pointer;
+.btn-floating {
+  width: 13%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .btn-menu {
+    font-size: 1rem;
+    margin: auto 15px;
+    padding: 5px 10px;
+  }
+  .btn-floating {
+    width: 35%;
+    right: 2px;
+    bottom: 5px;
+  }
 }

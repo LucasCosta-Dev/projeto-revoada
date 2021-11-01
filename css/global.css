@@ -36,12 +36,16 @@ html {
   min-height: 500px;
   margin: 0px auto; }
 
+@media (max-width: 700px) {
+  .container-space {
+    min-height: 20px; } }
 .row {
   display: flex;
   flex-direction: row;
   align-content: normal;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .row-nav {
   margin-top: 3px;
@@ -107,6 +111,9 @@ html {
 .coll-70 {
   height: 70%; }
 
+@media (max-width: 700px) {
+  .coll-50 {
+    width: 90%; } }
 .banner {
   background-image: url("../../imagens/banner-revoada.png");
   min-height: 600px; }
@@ -114,6 +121,9 @@ html {
 .banner-menu {
   background-image: url("../../imagens/menu.png"); }
 
+@media (max-width: 700px) {
+  .banner {
+    min-height: 350px; } }
 .parallax {
   background-attachment: fixed;
   background-size: cover;
@@ -131,55 +141,55 @@ html {
   background-repeat: no-repeat; }
 
 .nav-text {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   font-size: 1.5rem;
   font-weight: lighter;
   text-align: center; }
   .nav-text:hover {
-    border: 3px solid #CDA67D;
+    border: 3px solid #cda67d;
     border-radius: 10px; }
 
 .title {
-  font-family: 'Nunito' , sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   font-size: 6rem;
   text-shadow: 2px 2px 6px #181717;
   text-align: center; }
 
 .sub-title {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   font-size: 3rem;
   text-align: center;
   text-shadow: 2px 2px 6px #181717; }
 
 .title-section {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: black;
   font-size: 2.5rem;
   text-align: justify; }
 
 .text {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: black;
   font-size: 1rem;
   text-align: justify; }
 
 .title-contact {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: black;
   font-size: 1.5rem;
   text-align: center; }
 
 .text-contact {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: black;
   font-size: 1rem;
   text-align: center; }
 
 .title-menu {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: black;
   font-size: 1.5rem;
   text-align: center;
@@ -187,7 +197,7 @@ html {
   top: -25px; }
 
 .text-menu {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: black;
   font-size: 1rem;
   text-align: center;
@@ -196,6 +206,34 @@ html {
   transition: 0.3s ease-in-out;
   transform: translateY(-150px); }
 
+@media (max-width: 700px) {
+  .nav-text {
+    font-size: 1.2rem; }
+
+  .title {
+    font-size: 3.5rem; }
+
+  .sub-title {
+    font-size: 1.5rem; }
+
+  .title-section {
+    font-size: 2rem; }
+
+  .text {
+    font-size: 14px; }
+
+  .title-menu {
+    font-size: 14px;
+    top: -15px; }
+
+  .text-menu {
+    font-size: 14px; }
+
+  .title-contact {
+    font-size: 1rem; }
+
+  .text-contact {
+    font-size: 0.9rem; } }
 .mt-10 {
   margin-top: 10px; }
 
@@ -209,7 +247,7 @@ html {
   padding: 30px 0px; }
 
 .py-50 {
-  padding: 50px; }
+  padding: 50px 0px; }
 
 .center {
   margin: auto; }
@@ -229,6 +267,12 @@ html {
 .my-20 {
   margin: 20px auto; }
 
+@media (max-width: 700px) {
+  .py-50 {
+    padding: 30px 0px; }
+
+  .mx-20 {
+    margin: 0px 2px; } }
 .card-logo {
   width: 39%;
   height: auto;
@@ -286,6 +330,25 @@ html {
   justify-content: center;
   align-items: center; }
 
+@media (max-width: 700px) {
+  .card-logo {
+    width: 150%;
+    height: auto;
+    margin: 0px 10px; }
+
+  .card-menu {
+    width: 115px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 20px 10px; }
+    .card-menu:hover {
+      width: 180px;
+      height: 220px; }
+      .card-menu:hover .title-menu {
+        font-size: 1.1rem; }
+
+  .iframe {
+    height: 200px; } }
 .img-responsive-about {
   width: 100%;
   height: auto;
@@ -300,7 +363,7 @@ html {
   box-shadow: 7px 7px 13px 0px #323232; }
 
 .btn-menu {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   font-size: 1.2rem;
   text-align: center;
@@ -322,6 +385,16 @@ html {
   z-index: 1000;
   cursor: pointer; }
 
+@media (max-width: 700px) {
+  .btn-menu {
+    font-size: 1rem;
+    margin: auto 15px;
+    padding: 5px 10px; }
+
+  .btn-floating {
+    width: 35%;
+    right: 2px;
+    bottom: 5px; } }
 .icon-social a {
   cursor: pointer;
   color: white;

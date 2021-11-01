@@ -5,3 +5,9 @@
 .banner-menu{
     background-image: url('../../imagens/menu.png');
 }
+
+@media(max-width: 700px){
+    .banner{
+        min-height: 350px;
+    }
+}

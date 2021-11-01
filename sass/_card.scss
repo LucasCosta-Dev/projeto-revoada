@@ -62,3 +62,30 @@
     justify-content: center;
     align-items: center;
 }
+
+@media(max-width: 700px){
+    .card-logo {
+        width: 150%;
+        height: auto;
+        margin: 0px 10px;
+    }
+
+    .card-menu{
+        width: 115px;
+        height: 80px;
+        border-radius: 5px;
+        margin: 20px 10px;
+        &:hover{
+            width: 180px;
+            height: 220px;
+            .title-menu{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .iframe{
+        height: 200px;
+    }
+
+
+}
