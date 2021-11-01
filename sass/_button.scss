@@ -23,6 +23,23 @@
   z-index: 1000;
   cursor: pointer;
 }
+.btn-mobile{
+  margin: 0px 15px;
+  border: 0px;
+  border-radius: 5px;
+  background-color: transparent;
+  width: 55px;
+  height: 55px;
+  
+  i{
+    cursor: pointer;
+    color: white;
+    font-size: 2.2rem;
+  }
+  &:hover{
+    border: 2px solid #ffffff73;
+  }
+}
 
 @media (max-width: 700px) {
   .btn-menu {

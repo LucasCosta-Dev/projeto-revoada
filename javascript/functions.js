@@ -1,3 +1,15 @@
+var btnmenu = document.querySelector(".row-nav-mobile")
+
+function menumobile(){
+
+  if(btnmenu.style.display === "block"){
+    btnmenu.style.display = "none"
+  }else{
+    btnmenu.style.display = "block"
+  }
+
+}
+
 var lanches = document.querySelector(".lanches");
 var porcoes = document.querySelector(".porcoes");
 var sobremesas = document.querySelector(".sobremesas");
