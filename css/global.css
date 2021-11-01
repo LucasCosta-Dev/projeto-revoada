@@ -371,7 +371,7 @@ html {
   margin: auto 25px;
   background-color: #a7703c;
   border: none;
-  border-radius: 10px;
+  border-radius: 4px;
   cursor: pointer; }
   .btn-menu:hover {
     background-color: #783e00;
