@@ -31,22 +31,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-}
-.content {
-    position: absolute;
-    display: none;
-    max-width: 1440px;
-    left: 0px;
-    right: 0px;
-    margin: 20px auto;
-}
-.rd-tabs:checked ~ .content {
-    display: flex;
+    flex-direction: column;
     align-content: center;
-    justify-content: center;
-    justify-items: stretch;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
 }
+

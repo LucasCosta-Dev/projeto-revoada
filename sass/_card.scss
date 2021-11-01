@@ -30,5 +30,21 @@
     &:hover{
         width: 240px;
         height: 260px;
+        .text-menu{
+            opacity: 1;
+            transition: 0.3s;
+            transform: translateY(0px);
+        }
     }
+}
+
+
+.lanches{
+    display: flex;
+}
+.porcoes{
+    display: none;
+}
+.sobremesas{
+    display: none;
 }

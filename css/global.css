@@ -39,23 +39,8 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row; }
-
-.content {
-  position: absolute;
-  display: none;
-  max-width: 1440px;
-  left: 0px;
-  right: 0px;
-  margin: 20px auto; }
-
-.rd-tabs:checked ~ .content {
-  display: flex;
+  flex-direction: column;
   align-content: center;
-  justify-content: center;
-  justify-items: stretch;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center; }
 
 .row {
@@ -100,9 +85,6 @@ html {
 
 .row-footer {
   display: flex; }
-
-.row-li {
-  float: left; }
 
 .coll-5 {
   width: 5%; }
@@ -220,10 +202,7 @@ html {
   padding: 15px 5px;
   opacity: 0;
   transition: 0.3s ease-in-out;
-  position: relative;
-  top: -30px; }
-  .text-menu:hover {
-    opacity: 1; }
+  transform: translateY(100px); }
 
 .mt-10 {
   margin-top: 10px; }
@@ -285,6 +264,19 @@ html {
   .card-menu:hover {
     width: 240px;
     height: 260px; }
+    .card-menu:hover .text-menu {
+      opacity: 1;
+      transition: 0.3s;
+      transform: translateY(0px); }
+
+.lanches {
+  display: flex; }
+
+.porcoes {
+  display: none; }
+
+.sobremesas {
+  display: none; }
 
 .img-responsive {
   width: 100%;
