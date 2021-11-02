@@ -22,9 +22,7 @@
 }
 .row-nav-mobile{
     display: none;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    background-color: #000000d1;
+    background-color: #000000;
     text-align: center;
     position: absolute;
     width: 100%;
@@ -56,6 +54,14 @@
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
+}
+.menu{
+    display: none;
+    flex-direction: row;
+    align-content: normal;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
 }
 .row-contact{
     display: flex;
