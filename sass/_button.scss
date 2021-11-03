@@ -1,4 +1,4 @@
-.btn-mobile{
+.btn-mobile {
   display: none;
 }
 
@@ -20,17 +20,32 @@
   }
 }
 .btn-floating {
-  width: 13%;
+  width: 11%;
   position: fixed;
   right: 20px;
   bottom: 20px;
-  z-index: 1000;
   cursor: pointer;
+
+  animation: pulsar;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  @keyframes pulsar {
+    0% {
+      width: 11%;
+    }
+    100% {
+      width: 13%;
+    }
+  }
 }
 
-
 @media (max-width: 700px) {
-  .btn-mobile{
+  .btn-mobile {
     display: block;
     margin-right: 10px;
     border: none;
@@ -38,13 +53,13 @@
     background-color: transparent;
     width: 60px;
     height: 60px;
-    
-    i{
+
+    i {
       cursor: pointer;
       color: #f7f7f7;
       font-size: 3rem;
     }
-    &:hover{
+    &:hover {
       border: 2px solid #f7f7f7;
     }
   }
@@ -57,5 +72,21 @@
     width: 35%;
     right: 2px;
     bottom: 5px;
+    animation: pulsarmobile;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    @keyframes pulsarmobile {
+      0% {
+        width: 33%;
+      }
+      100% {
+        width: 37%;
+      }
+    }
   }
 }

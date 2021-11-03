@@ -102,9 +102,10 @@ html {
   .row-nav-mobile {
     z-index: 1000;
     width: 100%;
+    height: 100vh;
     background-color: black;
     display: block;
-    text-align: center;
+    text-align: end;
     position: absolute;
     top: 70px;
     right: 0;
@@ -367,13 +368,24 @@ html {
     box-shadow: 0px 0px 13px 5px #af6c4b; }
 
 .btn-floating {
-  width: 13%;
+  width: 11%;
   position: fixed;
   right: 20px;
   bottom: 20px;
-  z-index: 1000;
-  cursor: pointer; }
-
+  cursor: pointer;
+  animation: pulsar;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+@keyframes pulsar {
+  0% {
+    width: 11%; }
+  100% {
+    width: 13%; } }
 @media (max-width: 700px) {
   .btn-mobile {
     display: block;
@@ -398,7 +410,20 @@ html {
   .btn-floating {
     width: 35%;
     right: 2px;
-    bottom: 5px; } }
+    bottom: 5px;
+    animation: pulsarmobile;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running; }
+  @keyframes pulsarmobile {
+    0% {
+      width: 33%; }
+    100% {
+      width: 37%; } } }
 .icon-social a {
   cursor: pointer;
   color: white;
