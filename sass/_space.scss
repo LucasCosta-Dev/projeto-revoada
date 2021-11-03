@@ -1,6 +1,4 @@
-.mt-10{
-    margin-top: 10px;
-}
+
 .mb-title-section {
     margin-bottom: 20px;
 }
@@ -25,12 +23,6 @@
 .px-10{
     padding: 5px 10px;
 }
-.mx-20{
-    margin: 0px 20px;
-}
-.my-20{
-    margin: 20px auto;
-}
 
 @media(max-width: 700px){
     .mb-title-section {
@@ -39,8 +31,5 @@
     .py-50{
         padding-top: 100px;
         padding-bottom: 50px;
-    }
-    .mx-20{
-        margin: 0px 2px;
     }
 }

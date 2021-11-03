@@ -1,62 +1,55 @@
-var btn_menu_mobile = document.querySelector(".row-nav-mobile");
 var btn_mobile = document.querySelector(".btn-mobile");
+var btn_menu = document.querySelector(".fas")
 
-var btnlanches = document.querySelector('#btnlanches')
-var btnporcoes = document.querySelector('#btnporcoes')
-var btnsobremesas = document.querySelector('#btnsobremesas')
 
 var lanches = document.querySelector("#lanches");
 var porcoes = document.querySelector("#porcoes");
 var sobremesas = document.querySelector("#sobremesas");
 
 // button menu mobile //
-btn_mobile.addEventListener("click", function () {
-  if (btn_menu_mobile.style.display === "block") {
-    btn_menu_mobile.style.display = "none";
-  } else {
-    btn_menu_mobile.style.display = "block";
-  }
-});
-btn_menu_mobile.addEventListener("click", function () {
-  btn_menu_mobile.style.display = "none";
-});
-// end button menu mobile //
 
-// buttons menu //
-
-btnlanches.addEventListener('click', function(){
+btn_mobile.addEventListener('click' , () =>{
+  menumobile.classList.toggle('row-nav-mobile')
+  menumobile.classList.toggle('animation')
+  btn_menu.classList.toggle('fa-times')
   
-  if(lanches.style.display === 'flex'){
-    porcoes.style.display = "none";
-    sobremesas.style.display = "none";
-  }else{
-    lanches.style.display = 'flex';
-    porcoes.style.display = "none";
-    sobremesas.style.display = "none";
-  }
 })
-btnporcoes.addEventListener('click', function(){
+
+function fecharmenu(){
+  menumobile.classList.remove('row-nav-mobile')
+  menumobile.classList.toggle('animation')
+  btn_menu.classList.toggle('fa-times')
   
-  if(porcoes.style.display === 'flex'){
-    lanches.style.display = "none";
-    sobremesas.style.display = "none";
-  }else{
-    porcoes.style.display = 'flex';
-    lanches.style.display = "none";
-    sobremesas.style.display = "none";
-  }
+}
+// fim button menu mobile //
+
+// button menu //
+
+btnlanches.addEventListener('click' , () =>{
+  lanches.classList.add('menu')
+  lanches.classList.add('animation')
+  porcoes.classList.remove('menu')
+  porcoes.classList.remove('animation')
+  sobremesas.classList.remove('menu')
+  sobremesas.classList.remove('animation')
 
 })
-btnsobremesas.addEventListener('click', function(){
-  
-  if(sobremesas.style.display === 'flex'){
-    porcoes.style.display = "none";
-    lanches.style.display = "none";
-  }else{
-    sobremesas.style.display = 'flex';
-    porcoes.style.display = "none";
-    lanches.style.display = "none";
-  }
+btnporcoes.addEventListener('click' , () =>{
+  porcoes.classList.add('menu')
+  porcoes.classList.add('animation')
+  lanches.classList.remove('menu')
+  lanches.classList.remove('animation')
+  sobremesas.classList.remove('menu')
+  sobremesas.classList.remove('animation')
+
+})
+btnsobremesas.addEventListener('click' , () =>{
+  sobremesas.classList.add('menu')
+  sobremesas.classList.add('animation')
+  lanches.classList.remove('menu')
+  lanches.classList.remove('animation')
+  porcoes.classList.remove('menu')
+  porcoes.classList.remove('animation')
 
 })
 // end buttons menu //

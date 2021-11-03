@@ -4,6 +4,8 @@
   font-size: 1.5rem;
   font-weight: lighter;
   text-align: center;
+  padding: 5px 5px;
+  margin: 0px 30px;
 
   &:hover {
     border: 3px solid #cda67d;
@@ -63,14 +65,13 @@
   text-align: center;
   padding: 10px 0px;
   opacity: 0;
-  
+
   transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 700px) {
   .nav-text {
     font-size: 1.8rem;
-
   }
   .title {
     font-size: 3.5rem;
@@ -93,7 +94,6 @@
   }
   .title-contact {
     font-size: 1rem;
-
   }
   .text-contact {
     font-size: 0.9rem;

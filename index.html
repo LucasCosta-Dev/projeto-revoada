@@ -26,60 +26,46 @@
     <!-- ============================================================== -->
 
     <header>
-      <!-- nav desktop-->
       <nav>
-        <div class="container-nav">
-          <div class="row-nav">
-            <div class="coll-10">
-              <figure class="card-logo">
-                <img
-                  class="img-responsive-about"
-                  src="imagens/logo-revoada-branco.ico"
-                  alt="Logo-Revoada"
-                />
-              </figure>
-            </div>
-            <div class="coll-95">
-              <div class="nav-desktop">
-                <ul class="row-nav">
-                  <li>
-                    <a class="nav-text mx-20 px-10" href="#sobre">SOBRE</a>
-                  </li>
-                  <li>
-                    <a class="nav-text mx-20 px-10" href="#cardapio"
-                      >CARDAPIO</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-text mx-20 px-10" href="#contato">CONTATO</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- fim nav desktop-->
-              <!-- nav mobile-->
-              <div class="nav-mobile">
-                <button class="btn-mobile">
-                  <i class="fas fa-bars"></i>
-                </button>
-                <ul class="row-nav-mobile">
-                  <li>
-                    <a class="nav-text mx-20 px-10" href="#sobre">SOBRE</a>
-                  </li>
-                  <li>
-                    <a class="nav-text mx-20 px-10" href="#cardapio"
-                      >CARDAPIO</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-text mx-20 px-10" href="#contato">CONTATO</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div class="container-nav row-nav">
+          <div>
+            <figure class="card-logo">
+              <img
+                class="img-responsive-about"
+                src="imagens/logo-revoada-branco.ico"
+                alt=""
+              />
+            </figure>
+          </div>
+          <div>
+            <ul class="row-nav-desktop show">
+              <li><a class="nav-text" href="#sobre">SOBRE</a></li>
+              <li><a class="nav-text" href="#cardapio">CARDAPIO</a></li>
+              <li><a class="nav-text" href="#contato">CONTATO</a></li>
+            </ul>
+            <button class="btn-mobile">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul id="menumobile" class="none">
+              <li>
+                <a onclick="fecharmenu()" class="nav-text" href="#sobre"
+                  >SOBRE</a
+                >
+              </li>
+              <li>
+                <a onclick="fecharmenu()" class="nav-text" href="#cardapio"
+                  >CARDAPIO</a
+                >
+              </li>
+              <li>
+                <a onclick="fecharmenu()" class="nav-text" href="#contato"
+                  >CONTATO</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
-      <!-- fim nav mobile-->
     </header>
     <!-- ============================================================== -->
     <!-- fim nav -->
@@ -99,7 +85,7 @@
     <!-- fim button floating -->
     <!-- ============================================================== -->
     <!-- banner home -->
-    <section  id="sobre">
+    <section id="sobre">
       <div class="banner parallax">
         <h1 class="title">REVOADA</h1>
         <h2 class="sub-title">LANCHES</h2>
@@ -159,14 +145,12 @@
               <button id="btnporcoes" class="btn-menu">PORCOES</button>
             </li>
             <li>
-              <button id="btnsobremesas" class="btn-menu">
-                SOBREMESAS
-              </button>
+              <button id="btnsobremesas" class="btn-menu">SOBREMESAS</button>
             </li>
           </ul>
         </nav>
         <div class="container-menu">
-          <div id="lanches" class="row">
+          <div id="lanches" class="none menu">
             <div class="card-menu">
               <figure class="card-menu-img">
                 <img
@@ -322,7 +306,7 @@
               </p>
             </div>
           </div>
-          <div id="porcoes" class="menu">
+          <div id="porcoes" class="none">
             <div class="card-menu">
               <figure class="card-menu-img">
                 <img
@@ -394,7 +378,7 @@
               </p>
             </div>
           </div>
-          <div id="sobremesas" class="menu">
+          <div id="sobremesas" class="none">
             <div class="card-menu">
               <figure class="card-menu-img">
                 <img

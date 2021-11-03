@@ -1,3 +1,7 @@
+.btn-mobile{
+  display: none;
+}
+
 .btn-menu {
   font-family: "Nunito", sans-serif;
   color: white;
@@ -23,25 +27,27 @@
   z-index: 1000;
   cursor: pointer;
 }
-.btn-mobile{
-  margin: 0px 15px;
-  border: 0px;
-  border-radius: 5px;
-  background-color: transparent;
-  width: 55px;
-  height: 55px;
-  
-  i{
-    cursor: pointer;
-    color: white;
-    font-size: 2.2rem;
-  }
-  &:hover{
-    border: 2px solid #ffffff73;
-  }
-}
+
 
 @media (max-width: 700px) {
+  .btn-mobile{
+    display: block;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    
+    i{
+      cursor: pointer;
+      color: #f7f7f7;
+      font-size: 3rem;
+    }
+    &:hover{
+      border: 2px solid #f7f7f7;
+    }
+  }
   .btn-menu {
     font-size: 1rem;
     margin: auto 10px;
