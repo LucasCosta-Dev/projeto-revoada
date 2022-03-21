@@ -349,11 +349,12 @@ footer {
   font-family: "Nunito", sans-serif;
   color: white;
   font-size: 1.3rem;
-  font-weight: lighter;
+  font-weight: 550;
   text-align: center;
   padding: 3px 5px;
-  margin: 0px 15px;
+  margin: 0px 10px;
   position: relative;
+  font-style: italic;
 }
 
 .nav-text::before {
