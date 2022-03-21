@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>REVOADA LANHCES</title>
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="sass/global.css" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
     />
   </head>
 
-  <body>
+  <body class="banner parallax">
     <!-- ============================================================== -->
 
     <header>
@@ -49,27 +49,36 @@
             <ul id="menumobile" class="none">
               <li>
                 <a onclick="fecharmenu()" class="nav-text" href="#sobre"
-                  >SOBRE <i class="fas fa-store"></i></a
-                >
+                  >SOBRE <i class="fas fa-store"></i
+                ></a>
               </li>
               <li>
                 <a onclick="fecharmenu()" class="nav-text" href="#cardapio"
-                  >CARDAPIO <i class="fas fa-hamburger"></i></a>
+                  >CARDAPIO <i class="fas fa-hamburger"></i
+                ></a>
               </li>
               <li>
                 <a onclick="fecharmenu()" class="nav-text" href="#contato"
-                  >CONTATO <i class="fas fa-phone"></i></a
-                >
+                  >CONTATO <i class="fas fa-phone"></i
+                ></a>
               </li>
               <li>
-                <a onclick="fecharmenu()" class="nav-text" href="https://www.google.com/maps/dir//-23.5410149,-46.8223068/@-23.5411508,-46.8217391,18.54z/data=!4m2!4m1!3e0" target="_blank"
-                  >COMO CHEGAR <i class="fas fa-map-marker-alt"></i></a
-                >
+                <a
+                  onclick="fecharmenu()"
+                  class="nav-text"
+                  href="https://www.google.com/maps/dir//-23.5410149,-46.8223068/@-23.5411508,-46.8217391,18.54z/data=!4m2!4m1!3e0"
+                  target="_blank"
+                  >COMO CHEGAR <i class="fas fa-map-marker-alt"></i
+                ></a>
               </li>
               <li>
-                <a onclick="fecharmenu()" class="nav-text" href="https://api.whatsapp.com/send?phone=5511964236353&text=Olá%20Gostaria%20de%20fazer%20um%20pedido." target="_blank"
-                  >FAÇA SEU PEDIDO <i class="fas fa-mobile-alt"></i></a
-                >
+                <a
+                  onclick="fecharmenu()"
+                  class="nav-text"
+                  href="https://api.whatsapp.com/send?phone=5511964236353&text=Olá%20Gostaria%20de%20fazer%20um%20pedido."
+                  target="_blank"
+                  >FAÇA SEU PEDIDO <i class="fas fa-mobile-alt"></i
+                ></a>
               </li>
             </ul>
           </div>
@@ -95,20 +104,21 @@
     <!-- ============================================================== -->
     <!-- banner home -->
     <section id="sobre">
-      <div class="banner parallax">
-        <h1 class="title opacity">REVOADA</h1>
-        <h2 class="sub-title opacity">LANCHES</h2>
+      <div class="container-carousel">
+        <div class="wrapper">
+          <h1 class="title opacity">REVOADA</h1>
+          <h2 class="sub-title opacity">LANCHES</h2>
+        </div>
       </div>
     </section>
     <!-- fim banner home -->
     <!-- ============================================================== -->
-    <div class="container-space"></div>
     <!-- ============================================================== -->
     <!-- sobre -->
-    <section class="py-30">
+    <section  class="white py-30">
       <div class="container">
-        <div class="row">
-          <div class="coll-50">
+        <div class="row gap-20">
+          <div class="coll-60">
             <h3 class="title-section mb-title-section">
               <strong>SOBRE</strong> <i class="fas fa-store"></i>
             </h3>
@@ -126,7 +136,7 @@
               officia velit id.
             </p>
           </div>
-          <div class="coll-50">
+          <div class="coll-30">
             <figure class="card center">
               <img
                 class="img-responsive-about"
@@ -140,11 +150,10 @@
     </section>
     <!-- fim sobre -->
     <!-- ============================================================== -->
-    <div class="container-space"></div>
     <!-- ============================================================== -->
     <!-- cardapio -->
     <main id="cardapio">
-      <div class="banner-menu parallax-menu">
+      <div>
         <nav class="py-50">
           <ul class="row-menu">
             <li>
@@ -410,24 +419,23 @@
     </main>
     <!-- fim cardapio -->
     <!-- ============================================================== -->
-    <div class="container-space" id="contato"></div>
     <!-- ============================================================== -->
     <!-- contato -->
-    <section>
-      <div class="container py-30">
-        <div class="row">
-          <div class="coll-50">
+    <section class="white">
+      <div class="container">
+        <div class="row gap-20">
+          <div class="coll-40">
             <iframe
               class="iframe"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.4403644763588!2d-46.822945470775075!3d-23.541080569553337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceffd68f950847%3A0x9e61b630474450eb!2sR.%20Manoel%20Nicolau%20-%20Jardim%20Cecilia%20Cristina%2C%20Carapicu%C3%ADba%20-%20SP%2C%2006329-710!5e0!3m2!1sen!2sbr!4v1634783050022!5m2!1sen!2sbr"
               width="100%"
-              height="450"
+              height="350"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
             ></iframe>
           </div>
-          <div class="coll-50">
+          <div class="coll-40">
             <div class="row-contact">
               <div class="py-10">
                 <h3 class="title-contact">HORARIO DE FUNCIONAMENTO</h3>

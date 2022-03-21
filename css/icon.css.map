@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,cAAc;EACV,MAAM,EAAE,OAAO;EACf,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,GAAG;EACd,OAAO,EAAE,QAAQ;EAEb,oBAAO;IACX,KAAK,EAAE,KAAkB",
-"sources": ["../sass/icon.scss"],
-"names": [],
-"file": "icon.css"
-}
