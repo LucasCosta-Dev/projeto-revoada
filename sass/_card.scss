@@ -1,5 +1,5 @@
 .card-logo {
-  width: 20%;
+  max-width: 50px;
   height: auto;
   margin-left: 20px;
   margin-top: 10px;
@@ -43,10 +43,7 @@
   border-radius: 10px;
 }
 
-
-
 @media (max-width: 700px) {
-  
   .card-menu {
     width: 100px;
     height: 70px;

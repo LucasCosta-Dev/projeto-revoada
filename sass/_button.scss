@@ -1,7 +1,6 @@
 .btn-mobile {
   display: none;
 }
-
 .btn-menu {
   font-family: "Nunito", sans-serif;
   color: white;
@@ -44,8 +43,7 @@
     }
   }
 }
-
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .btn-mobile {
     display: block;
     margin-right: 10px;

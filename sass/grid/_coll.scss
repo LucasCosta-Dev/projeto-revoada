@@ -1,16 +1,21 @@
 .coll-40 {
-    width: 40%;
+  width: 40%;
+}
+.coll-50 {
+  width: 50%;
 }
 .coll-60 {
-    width: 60%;
+  width: 60%;
 }
 .coll-30 {
-    width: 30%;
+  width: 30%;
 }
 
-
-@media (max-width: 700px) {
-    .coll-50 {
-        width: 90%;
-    }
+@media (max-width: 900px) {
+  .coll-50 {
+    width: 100%;
+  }
+  .coll-40 {
+    width: 100%;
+  }
 }

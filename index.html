@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REVOADA LANHCES</title>
+    <title>Lanches</title>
     <link rel="stylesheet" href="sass/global.css" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,19 +22,21 @@
     />
   </head>
 
-  <body class="banner parallax">
+  <body>
     <!-- ============================================================== -->
 
     <header>
-      <nav>
-        <div class="container-nav row-nav">
+      <nav class="container-nav">
+        <div class="row-nav">
           <div>
             <figure class="card-logo">
-              <img
-                class="img-responsive-about"
-                src="imagens/logo-black.png"
-                alt=""
-              />
+              <a href="#banner">
+                <img
+                  class="img-responsive-about"
+                  src="imagens/logo-white.png"
+                  alt=""
+                />
+              </a>
             </figure>
           </div>
           <div>
@@ -46,7 +48,7 @@
             <button class="btn-mobile">
               <i class="fas fa-bars"></i>
             </button>
-            <ul id="menumobile" class="none">
+            <ul id="menumobile">
               <li>
                 <a onclick="fecharmenu()" class="nav-text" href="#sobre"
                   >SOBRE <i class="fas fa-store"></i
@@ -75,7 +77,7 @@
                 <a
                   onclick="fecharmenu()"
                   class="nav-text"
-                  href="https://api.whatsapp.com/send?phone=5511964236353&text=Olá%20Gostaria%20de%20fazer%20um%20pedido."
+                  href="https://api.whatsapp.com/send?phone=55119999999&text=Olá%20Gostaria%20de%20fazer%20um%20pedido."
                   target="_blank"
                   >FAÇA SEU PEDIDO <i class="fas fa-mobile-alt"></i
                 ></a>
@@ -91,7 +93,7 @@
     <!-- button floating -->
     <div class="btn-floating">
       <a
-        href="https://api.whatsapp.com/send?phone=5511964236353&text=Olá%20Gostaria%20de%20fazer%20um%20pedido."
+        href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá%20Gostaria%20de%20fazer%20um%20pedido."
         target="_blank"
         ><img
           class="img-responsive-about"
@@ -103,10 +105,10 @@
     <!-- fim button floating -->
     <!-- ============================================================== -->
     <!-- banner home -->
-    <section>
+    <section id="banner" class="banner">
       <div class="container-carousel">
         <div class="wrapper">
-          <h1 class="title opacity">REVOADA</h1>
+          <h1 class="title opacity">NOME RESTAURANTE</h1>
           <h2 class="sub-title opacity">LANCHES</h2>
         </div>
       </div>
@@ -115,11 +117,11 @@
     <!-- ============================================================== -->
     <!-- ============================================================== -->
     <!-- sobre -->
-    <section id="sobre"  class="white py-30">
+    <section id="sobre" class="py-60">
       <div class="container">
-        <div class="row gap-20">
-          <div class="coll-60">
-            <h3 class="title-section mb-title-section">
+        <div class="row">
+          <div class="coll-50">
+            <h3 class="title-sobre mb-title-section">
               <strong>SOBRE</strong> <i class="fas fa-store"></i>
             </h3>
             <p class="text mb-paragraph">
@@ -136,8 +138,8 @@
               officia velit id.
             </p>
           </div>
-          <div class="coll-30">
-            <figure class="card center">
+          <div class="coll-50">
+            <figure class="figure-sobre center">
               <img
                 class="img-responsive-about"
                 src="imagens/logo-revoada-preto.png"
@@ -152,276 +154,22 @@
     <!-- ============================================================== -->
     <!-- ============================================================== -->
     <!-- cardapio -->
-    <main id="cardapio">
-      <div>
-        <nav class="py-50">
-          <ul class="row-menu">
-            <li>
-              <button id="btnlanches" class="btn-menu">LANCHES</button>
-            </li>
-            <li>
-              <button id="btnporcoes" class="btn-menu">PORCOES</button>
-            </li>
-            <li>
-              <button id="btnsobremesas" class="btn-menu">SOBREMESAS</button>
-            </li>
-          </ul>
-        </nav>
-        <div class="container-menu">
-          <div id="lanches" class="none menu">
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-TUDO</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-          </div>
-          <div id="porcoes" class="none">
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu"><X-REVOADA>X-REVOADA</X-REVOADA></h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu"><X-REVOADA>X-REVOADA</X-REVOADA></h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu"><X-REVOADA>X-REVOADA</X-REVOADA></h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu"><X-REVOADA>X-REVOADA</X-REVOADA></h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu"><X-REVOADA>X-REVOADA</X-REVOADA></h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-          </div>
-          <div id="sobremesas" class="none">
-            <div class="card-menu">
-              <figure class="card-menu-img">
-                <img
-                  class="img-responsive"
-                  src="imagens/banner-revoada.png"
-                  alt=""
-                />
-              </figure>
-              <h3 class="title-menu">X-CALABRESA</h3>
-              <p class="text-menu">
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-                Maionese, Molho, Cheddar, Catupiry, Hamburger 90g, Mussarela,
-                Presunto, Frango, Bacon, Calabresa, Ovo, Alface, Tomate.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+    <div id="cardapio" class="container-banner banner-contato parallax">
+      <h2 class="title-section">CARDAPIO</h2>
+    </div>
+    <section class="white py-60">
+      <div class="container-menu"></div>
+    </section>
     <!-- fim cardapio -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
     <!-- contato -->
-    <section id="contato" class="white">
+
+    <div id="contato" class="container-banner banner-contato parallax">
+      <h2 class="title-section">CONTATO</h2>
+    </div>
+
+    <section class="white py-60">
       <div class="container">
         <div class="row gap-20">
           <div class="coll-40">
@@ -452,7 +200,7 @@
               <div class="py-10">
                 <h3 class="title-contact">TELEFONE PARA CONTATO</h3>
                 <ul>
-                  <li class="text-contact">(11) 96423-6353</li>
+                  <li class="text-contact">(11) 9999-9999</li>
                 </ul>
               </div>
               <div class="py-10">
@@ -482,24 +230,20 @@
     <!-- ============================================================== -->
     <footer>
       <div class="container-footer">
-        <div class="row py-5">
+        <div class="row-footer py-5">
           <figure class="icon-social">
-            <a
-              href="https://www.facebook.com/Revoada-Lanches-104728511475319"
-              target="_blank"
+            <a href="https://www.facebook.com/" target="_blank"
               ><i class="fab fa-facebook-square"></i
             ></a>
           </figure>
           <figure class="icon-social">
-            <a
-              href="https://www.instagram.com/revoadalanches/?hl=pt-br"
-              target="_blank"
+            <a href="https://www.instagram.com/" target="_blank"
               ><i class="fab fa-instagram-square"></i
             ></a>
           </figure>
           <figure class="icon-social">
             <a
-              href="https://api.whatsapp.com/send?phone=5511964236353&text=Olá%20Gostaria%20de%20fazer%20um%20pedido."
+              href="https://api.whatsapp.com/send?phone=5511999999999&text=Olá%20Gostaria%20de%20fazer%20um%20pedido."
               target="_blank"
               ><i class="fab fa-whatsapp-square"></i
             ></a>

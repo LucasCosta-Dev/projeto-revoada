@@ -1,19 +1,17 @@
 .banner {
-    background-image: url("../../imagens/5.jpg");
-    min-height: 600px;
-    background-repeat: repeat;
-    z-index: 0;
-    &::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.15);
-        z-index: 0;
-    }
+  background-image: url("../../imagens/banner-1.jpg");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
+.banner-contato {
+  background-image: url("../../imagens/banner-4.png");
+  position: relative;
+}
+
 @media (max-width: 700px) {
-    .banner {
-        min-height: 350px;
-    }
+  .banner {
+    min-height: 350px;
+  }
 }
